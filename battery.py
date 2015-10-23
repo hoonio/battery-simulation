@@ -1,0 +1,103 @@
+default_capacity = 600.0 * 1E-3 * 60.0 * 60.0 * 4 # Ws
+
+
+class Battery(object):
+	def __init__(self, capacity_Ws = default_capacity):
+		self.cap_init = capacity_Ws
+		self.cap = self.cap_init
+
+	def deplete_capacity(self, drain_Ws):
+		self.cap = max(self.cap - drain_Ws, 0.0)
+
+	def voltage(self):
+		val = self.cap / self.cap_init
+		if val <= 0:
+			return 0.0
+		else:
+			for i in range(len(self.table)):
+				if val <= self.table[i][0] and val >= self.table[i+1][0]:
+					alpha = (val - self.table[i+1][0]) / (self.table[i][0] - self.table[i+1][0])
+					return self.table[i][1] * alpha + self.table[i+1][1] * (1.0 - alpha)
+
+class Li_MnO2_Battery(Battery):
+	name = 'Li/MnO_2'
+	table = [
+		(1.0, 3.25),
+		(0.95, 3.1),
+		(0.875, 3.0),
+		(0.84, 2.98),
+		(0.75, 2.95),
+		(0.50, 2.9),
+		(0.28, 2.9),
+		(0.25, 2.875),
+		(0.2, 2.8),
+		(0.0, 2.3)
+	]
+
+class LiNiO2_Battery(Battery):
+	name = 'LiNiO_2'
+	table = [
+		(1.0, 4.25),
+		(0.93, 4.08),
+		(0.9, 4.05),
+		(0.1, 3.9),
+		(0.08, 3.85),
+		(0.0, 2.9)
+	]
+
+class C_LiCoO2_Battery(Battery):
+	name = 'C/LiCoO_2'
+	table = [
+		(1.0, 4),
+		(0.75, 3.85),
+		(0.5, 3.7),
+		(0.25, 3.47),
+		(0.0, 3.15)
+	]
+
+class LiAl_MnO2_Battery(Battery):
+	name = 'LiAl/MnO_2'
+	table = [
+		(1.0, 3.05),
+		(0.9, 2.78),
+		(0.75, 2.58),
+		(0.30, 2.4),
+		(0.25, 2.35),
+		(0.0, 1.85)
+	]
+
+class Li_MoS2_Battery(Battery):
+	name = 'Li/MoS_2'
+	table = [
+		(1.0, 2 * 2.25),
+		(0.85, 2 * 2.0),
+		(0.75, 2 * 1.9),
+		(0.50, 2 * 1.75),
+		(0.25, 2 * 1.58),
+		(0.1, 2 * 1.4),
+		(0.0, 2 * 1.25)
+	]
+
+class NiMH_Battery(Battery):
+	name = 'NiMH'
+	table = [
+		(1.0, 2 * 1.38),
+		(0.9, 2 * 1.31),
+		(0.8, 2 * 1.29),
+		(0.6, 2 * 1.28),
+		(0.4, 2 * 1.28),		
+		(0.2, 2 * 1.26),		
+		(0.1, 2 * 1.25),		
+		(0.05, 2 * 1.16),
+		(0.0, 2 * 0.92)
+	]
+
+types = [
+	Li_MnO2_Battery,
+	LiAl_MnO2_Battery,
+	NiMH_Battery,
+	Li_MoS2_Battery,
+	C_LiCoO2_Battery,
+	LiNiO2_Battery,
+]
+

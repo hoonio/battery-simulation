@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="236"
+   name=""
+   committed-date="2006-05-26T19:47:39.448700Z"
+   url="svn+ssh://ski819@ziyang.eecs.northwestern.edu/home/svn/svn-deregulation/trunk/kim"
+   last-author="dickrp"
+   kind="dir"
+   uuid="6551a2e2-5802-0410-9814-f9df263576dd"
+   repos="svn+ssh://ski819@ziyang.eecs.northwestern.edu/home/svn/svn-deregulation"
+   revision="236"/>
+<entry
+   committed-rev="236"
+   name="battery.py"
+   text-time="2006-06-02T14:59:42.000000Z"
+   committed-date="2006-05-26T19:47:39.448700Z"
+   checksum="ebd7fb9d934d48dfcba61ba82dd98d2c"
+   last-author="dickrp"
+   kind="file"
+   prop-time="2006-06-02T14:59:42.000000Z"/>
+<entry
+   committed-rev="236"
+   name="powvolt.py"
+   text-time="2006-06-02T14:59:42.000000Z"
+   committed-date="2006-05-26T19:47:39.448700Z"
+   checksum="700c0f5dfb3bb502a849be15a94c9013"
+   last-author="dickrp"
+   kind="file"
+   prop-time="2006-06-02T14:59:42.000000Z"/>
+<entry
+   committed-rev="236"
+   name="bl-plot.py.old"
+   text-time="2006-06-02T14:59:42.000000Z"
+   committed-date="2006-05-26T19:47:39.448700Z"
+   checksum="615b886da7310b8c76fa14ec5e6433ea"
+   last-author="dickrp"
+   kind="file"
+   prop-time="2006-06-02T14:59:42.000000Z"/>
+<entry
+   committed-rev="236"
+   name="bl-compute.py"
+   text-time="2006-06-02T14:59:42.000000Z"
+   committed-date="2006-05-26T19:47:39.448700Z"
+   checksum="5e02c00653ee8b05a970b97fae4a6a01"
+   last-author="dickrp"
+   kind="file"
+   prop-time="2006-06-02T14:59:42.000000Z"/>
+</wc-entries>

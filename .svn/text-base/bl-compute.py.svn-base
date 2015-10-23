@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+import powvolt
+import battery
+
+time_step = 1.0
+time = 0.0
+bat = battery.Li_MnO2_Battery()
+
+while capacity < 0:
+	time += time_step
+	power = powvolt.power_voltage('MPGdec', bat.voltate())
+	bat.deplete_capacity(power * time_step)
+
+print time
+

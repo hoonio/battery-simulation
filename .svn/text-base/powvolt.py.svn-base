@@ -1,0 +1,18 @@
+_bench_proc = {
+	'MPGdec' => [(3.3, 1), (3.112, 2), (2.83, 3), (2.736, 4)],
+	'MPGenc' => [(3.3, 1), (3.112, 2), (2.736, 3)],
+}
+
+def benchmark_proc(bench, voltage):
+	v_to_proc_cnt = _bench_proc[bench]
+	for v, pc in v_to_proc_cnt:
+		if v < voltage:
+			return pc		
+
+def single_proc_p(voltage):
+	return ***
+
+def power_voltage(bench, voltage):
+	pc = benchmark_proc(bench, voltage)
+	single_proc_p(voltage)
+	return pc * single_proc_p
