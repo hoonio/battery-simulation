@@ -1,0 +1,33 @@
+system.cpu0.POWER.DYNAMIC:bpred_block_average     0.189522                      
+system.cpu0.POWER.DYNAMIC:dcache_block_average     0.616888                      
+system.cpu0.POWER.DYNAMIC:dtlb_block_average     0.007146                      
+system.cpu0.POWER.DYNAMIC:fpalu_block_average     0.191665                      
+system.cpu0.POWER.DYNAMIC:fpmap_block_average     0.021895                      
+system.cpu0.POWER.DYNAMIC:fpmul_block_average     0.191664                      
+system.cpu0.POWER.DYNAMIC:fpq_block_average     0.115358                      
+system.cpu0.POWER.DYNAMIC:fpreg_block_average     0.073221                      
+system.cpu0.POWER.DYNAMIC:icache_block_average     0.323409                      
+system.cpu0.POWER.DYNAMIC:intalu_block_average     0.491991                      
+system.cpu0.POWER.DYNAMIC:intmap_block_average     0.022627                      
+system.cpu0.POWER.DYNAMIC:intq_block_average     0.232239                      
+system.cpu0.POWER.DYNAMIC:intreg_block_average     0.197525                      
+system.cpu0.POWER.DYNAMIC:itlb_block_average     0.003746                      
+system.cpu0.POWER.DYNAMIC:lsq_block_average     0.083938                      
+2.762834
+
+system.cpu0.POWER.STATIC:bpred_block_average     0.021704                      
+system.cpu0.POWER.STATIC:dcache_block_average     0.074847                      
+system.cpu0.POWER.STATIC:dtlb_block_average     0.021957                      
+system.cpu0.POWER.STATIC:fpalu_block_average     0.018561                      
+system.cpu0.POWER.STATIC:fpmap_block_average     0.013836                      
+system.cpu0.POWER.STATIC:fpmul_block_average     0.019863                      
+system.cpu0.POWER.STATIC:fpq_block_average     0.013827                      
+system.cpu0.POWER.STATIC:fpreg_block_average     0.007992                      
+system.cpu0.POWER.STATIC:icache_block_average     0.079839                      
+system.cpu0.POWER.STATIC:intalu_block_average     0.038133                      
+system.cpu0.POWER.STATIC:intmap_block_average     0.012281                      
+system.cpu0.POWER.STATIC:intq_block_average     0.016821                      
+system.cpu0.POWER.STATIC:intreg_block_average     0.011742                      
+system.cpu0.POWER.STATIC:itlb_block_average     0.007400                      
+system.cpu0.POWER.STATIC:lsq_block_average     0.011840                      
+0.370643
